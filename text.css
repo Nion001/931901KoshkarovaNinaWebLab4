@@ -4,7 +4,8 @@
 }
 body {
     margin: 0px;
-    background-color: #edeef0;
+    background-color: #edeef0;	
+    overflow-x: hidden;	
 }
 ::selection {
     color: green;
@@ -62,7 +63,7 @@ margin-left: 5%;
 @media screen and (max-width:650px){
 .menu{
 width: 100%;
-margin-left: 20%;
+margin-left: auto;
 margin-right: auto;
 padding:10px;
 float:none;
@@ -70,15 +71,22 @@ float:none;
 }
 }
 
-
-
-
-
 .center
 {
 	text-align:center;
+}
+@media screen and (min-width:650px){
+.center
+{
 	margin-left: 25%;
 }
+}
+
+@media screen and (max-width:1000px){
+.center
+{
+	margin-left: auto;
+}}
 
 .broken {
     max-width: 800px;
@@ -114,7 +122,6 @@ float:none;
     z-index: -1;
     padding: 10px;
     box-sizing: border-box;
-    overflow: auto;
     border: #d0d0d0 1px solid;
 }
 
